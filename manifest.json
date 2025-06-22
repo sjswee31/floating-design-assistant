@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Floating Design Assistant",
+  "version": "1.0",
+  "description": "An AI-powered assistant that gives design and accessibility feedback on any webpage.",
+  "permissions": ["tabs", "activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assistant.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assistant.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
