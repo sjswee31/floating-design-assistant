@@ -1,4 +1,4 @@
-# Floating Design Assistant Chrome Extension
+# UI/Web Accessibility Agent - Chrome Extension
 
 An AI-powered Chrome extension that provides real-time design and accessibility feedback on any webpage using Google's Gemini API.
 
